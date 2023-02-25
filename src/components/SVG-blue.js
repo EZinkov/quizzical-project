@@ -4,7 +4,7 @@ export default function SVG_Blue() {
   return (
     <svg
       aria-hidden="true"
-      className="blob-blue"
+      className="fixed bottom-0 left-0 -z-10"
       width="300"
       height="200"
       viewBox="0 0 148 118"

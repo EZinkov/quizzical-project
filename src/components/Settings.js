@@ -2,9 +2,9 @@ import React from "react"
 
 export default function Settings({ formData, handleChange, displayQuestions }) {
   return (
-    <div className="container-settings">
-      <h2>Choose your settings:</h2>
-      <form className="form-settings">
+    <div className="h-screen flex flex-col items-center justify-center max-w-full">
+      <h2 className="text-3xl mb-2 font-semibold">Choose your settings:</h2>
+      <form className="flex flex-col">
         <label htmlFor="category">Category:</label>
         <select
           id="category"
@@ -52,7 +52,7 @@ export default function Settings({ formData, handleChange, displayQuestions }) {
         </select>
         <button
           type="button"
-          className="start-btn"
+          className="py-4 px-6 bg-[var(--btn-bg)] rounded-2xl text-[var(--btn-font)] duration-500 hover:bg-[var(--btn-bg-hover)]  text-xl"
           onClick={() => displayQuestions()}
         >
           Start Quiz

@@ -73,7 +73,7 @@ export default function Answers({
         id={item.id}
         key={item.id}
         style={stylize(item)}
-        className="answer-btn"
+        className="py-1 px-2 mr-2 mt-2 rounded-md border-[var(--answer-border)] border"
         onClick={() => toggle(item.id, questionId, item.answer)}
         disabled={isGameOver ? true : false}
       >

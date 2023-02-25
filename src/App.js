@@ -106,7 +106,7 @@ export default function App() {
   }
 
   return (
-    <>
+    <div className="min-h-screen relative flex flex-col justify-center">
       <SVG_Yellow />
       {game.pageView === "index" && <Intro displaySettings={displaySettings} />}
       {game.pageView === "settings" && (
@@ -126,6 +126,6 @@ export default function App() {
         />
       )}
       <SVG_Blue />
-    </>
+    </div>
   )
 }

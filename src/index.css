@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg: #f2f4f7;
+  --font: #293264;
+  --btn-bg: #4d5b9e;
+  --btn-bg-hover: #293264;
+  --btn-font: #f5f7fb;
+  --answer-picked: #e2e5f7;
+  --answer-border: #4d5b9e;
+  --answer-correct: #b3debc;
+  --answer-disabled: #434954;
+  --answer-disabled-border: #b4b8c2;
+  --answer-wrong: #fddbdb;
+  --answer-div-border: #dbdef0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--font);
+  background: var(--bg);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-family: "Karla", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+select,
+input {
+  background: var(--answer-picked);
+  border: 2px solid var(--answer-border);
+  border-radius: 15px;
+  padding: 15px 10px;
+  color: var(--font);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+button:disabled {
+  border: 2px solid var(--answer-disabled-border);
+  cursor: not-allowed;
+}

@@ -4,7 +4,7 @@ export default function SVG_Yellow() {
   return (
     <svg
       aria-hidden="true"
-      className="blob-yellow"
+      className="fixed top-0 right-0 -z-10"
       width="300"
       height="200"
       viewBox="0 0 158 141"
